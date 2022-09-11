@@ -21,7 +21,7 @@ nav {
 
 nav li {
   display: inline;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 18px;
 }
 
 nav a {
@@ -48,11 +48,12 @@ nav a:hover {
   text-align: center;
   width: 30%;
   vertical-align: top;
-  margin: 0 1.5%;
+  margin: 1.5%;
   padding: 30px 20px;
   box-sizing: border-box;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
   border-radius: 10px;
+  background: linear-gradient(#fefefe, #888888);
 }
 
 .produtos li:hover {
@@ -148,8 +149,8 @@ thead {
 }
 
 main {
-  padding: 1rem 0;
-  background: linear-gradient(#fefefe, #888888);
+  padding: 1rem 10px;
+  background: -o-linear-gradient(#fefefe, grey);
 }
 
 td,
@@ -259,7 +260,11 @@ th {
   .principal,
   .conteudo-beneficios,
   .mapa-conteudo,
-  .video {
+  .video,
+  .produtos,
+  .produto-descricao,
+  .produto-preco,
+  .produtos li {
     width: auto;
   }
 
