@@ -230,7 +230,7 @@ th {
 }
 
 .itens:before {
-  content: '🟊';
+  content: '✔️';
 }
 
 .imagem-beneficios {
