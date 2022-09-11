@@ -274,7 +274,7 @@ th {
 
   nav {
     position: static;
-    width: 940px;
+    width: auto;
   }
 
   .lista-beneficios,
