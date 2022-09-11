@@ -4,7 +4,7 @@ body {
 
 header {
   background: #bbbbbb;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .caixa {
@@ -15,7 +15,7 @@ header {
 
 nav {
   position: absolute;
-  top: 110px;
+  top: 100px;
   right: 0;
 }
 
@@ -166,7 +166,7 @@ th {
 
 .titulo-principal {
   text-align: center;
-  font-size: 1em;
+  font-size: 1.5em;
   margin: 0 0 1em;
   clear: left;
 }
