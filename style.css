@@ -1,6 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
 header {
   background: #bbbbbb;
   padding: 20px 0;
@@ -84,7 +85,7 @@ nav a:hover {
 footer {
   text-align: center;
   background: url('bg.jpg');
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 .copyright {
@@ -93,77 +94,7 @@ footer {
   margin: 20px 0 0;
 }
 
-/* Página de contato */
-.contato {
-  width: 940px;
-  margin: 40px auto;
-}
-
-.contato label,
-.input-group legend {
-  display: block;
-  margin: 0 0 5px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.campo-padrao,
-textarea {
-  display: block;
-  margin: 0 0 30px;
-  padding: 10px 20px;
-  width: 50%;
-  border: 1px solid #aaa;
-}
-
-.input-group {
-  margin: 0 0 20px;
-}
-
-.newsletter {
-  margin: 0 0 20px;
-}
-
-.botao {
-  margin: 20px 0 0;
-  width: 30%;
-  padding: 10px 20px;
-  font-size: 24px;
-  display: inline-block;
-  background: orange;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  transition: 1s;
-}
-
-.botao:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
-
-.funcionamento {
-  width: 940px;
-  margin: 0 auto 40px;
-}
-
-table {
-  margin: 10px 0 0;
-}
-
-th {
-  background: #777777;
-  color: #ffffff;
-}
-
-td,
-th {
-  border: 1px solid #000000;
-  padding: 5px 20px;
-}
-
-main p {
-  padding: 0 0 10px;
+main {
 }
 
 form {
@@ -183,6 +114,7 @@ form legend {
   padding: 10px 25px;
   width: 50%;
 }
+
 .checkbox {
   margin: 20px 0;
 }
@@ -217,10 +149,11 @@ thead {
 
 td,
 th {
-  border: 1px solid black;
+  border: 1px solid #000000;
+  padding: 8px 15px;
 }
 
-/*css da pagina inicial*/
+/* css da página inicial */
 .banner {
   width: 100%;
 }
@@ -229,7 +162,7 @@ th {
   text-align: center;
   font-size: 2em;
   margin: 0 0 1em;
-  text-shadow: #555555;
+  clear: left;
 }
 
 .principal {
@@ -241,60 +174,14 @@ th {
 
 .principal p {
   margin: 0 0 1em;
-  width: 940px;
-  margin: 0 0 0 1em;
-  color: #000000;
 }
 
 .principal strong {
   font-weight: bold;
-  width: 940px;
-  margin: 0 auto;
 }
 
 .principal em {
   font-style: italic;
-  width: 940px;
-  margin: 0 auto;
-}
-
-.conteudo-beneficios {
-  width: 640px;
-  margin: 0 auto;
-}
-
-.beneficios {
-  padding: 3em 0;
-  background: #fefefe;
-}
-
-.lista-beneficios {
-  width: 40%;
-  float: left;
-  vertical-align: top;
-}
-
-.imagem-beneficios {
-  width: 60%;
-  opacity: 1;
-  transition: 300ms;
-  box-shadow: 30px 10px 40px grey;
-}
-
-.imagem-beneficios:hover {
-  opacity: 0.5;
-}
-
-.itens {
-  line-height: 1.5;
-}
-
-.itens:before {
-  content: '✪';
-}
-
-.itens:first-child {
-  font-weight: bold;
 }
 
 .utensilios {
@@ -302,6 +189,7 @@ th {
   float: left;
   margin: 0 20px 20px 0;
 }
+
 .mapa {
   padding: 3em 0;
   background: linear-gradient(#fefefe, #888888);
@@ -313,8 +201,47 @@ th {
 }
 
 .mapa p {
-  padding: 2em;
+  margin: 0 0 2em;
   text-align: center;
+}
+
+.beneficios {
+  padding: 3em 0;
+  background: #888888;
+}
+
+.conteudo-beneficios {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.lista-beneficios {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.itens {
+  line-height: 1.5;
+}
+
+.itens:first-child {
+  font-weight: bold;
+}
+
+.itens:before {
+  content: '🟊';
+}
+
+.imagem-beneficios {
+  width: 60%;
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+  opacity: 0.3;
 }
 
 .video {
