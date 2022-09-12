@@ -1,284 +1,64 @@
-body {
-  font-family: 'Montserrat', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Produtos - Barbearia Alura</title>
 
-header {
-  background: #bbbbbb;
-  padding: 15px 0;
-}
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="caixa">
+        <h1><img src="logo.png" /></h1>
 
-.caixa {
-  position: relative;
-  width: 940px;
-  margin: 0 auto;
-}
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-nav {
-  position: absolute;
-  top: 100px;
-  right: 0;
-}
+    <main>
+      <section class="produtos">
+				
+				<li>
+					<div>
+          <h2>Cabelo</h2>
+          <img src="cabelo.jpg" />
+          <p class="produto-descricao">
+            Na tesoura ou máquina, como o cliente preferir
+          </p>
+          <p class="produto-preco">R$ 25,00</p>
+        </li>
+		
+			
+        <li>
+          <h2>Barba</h2>
+          <img src="barba.jpg" />
+          <p class="produto-descricao">Corte e desenho profissional de barba</p>
+          <p class="produto-preco">R$ 18,00</p>
+        </li>
+        <li>
+          <h2>Cabelo + Barba</h2>
+          <img src="barba e cabelo.jpg" />
+          <p class="produto-descricao">Pacote completo de cabelo e barba</p>
+          <p class="produto-preco">R$ 35,00</p>
+        </li>
+      </section>
+    </main>
 
-nav li {
-  display: inline;
-  margin: 0 0 0 18px;
-}
-
-nav a {
-  text-transform: uppercase;
-  color: #000000;
-  font-weight: bold;
-  font-size: 22px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #c78c19;
-  text-decoration: underline;
-}
-
-.produtos {
-  width: 940px;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-
-.produtos li {
-  display: inline-block;
-  text-align: center;
-  width: 30%;
-  vertical-align: top;
-  margin: 1.5%;
-  padding: 30px 20px;
-  box-sizing: border-box;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  background: linear-gradient(#fefefe, #888888);
-}
-
-.produtos li:hover {
-  width: 30%;
-  opacity: 1;
-  transition: 400ms;
-  box-shadow: 10px 10px 10px 0 #000000;
-}
-
-.produtos li:active {
-  border-color: #088c19;
-}
-
-.produtos li:hover h2 {
-  font-size: 34px;
-}
-
-.produtos h2 {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.produto-descricao {
-  font-size: 18px;
-}
-
-.produto-preco {
-  font-size: 22px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-footer {
-  text-align: center;
-  background: url('bg.jpg');
-  padding: 40px 0;
-}
-
-.copyright {
-  color: #ffffff;
-  font-size: 13px;
-  margin: 20px 0 0;
-}
-
-form {
-  margin: 40px 0;
-}
-
-form label,
-form legend {
-  display: block;
-  font-size: 20px;
-  margin: 0 0 10px;
-}
-
-.input-padrao {
-  display: block;
-  margin: 0 0 20px;
-  padding: 10px 25px;
-  width: 50%;
-}
-
-.checkbox {
-  margin: 20px 0;
-}
-
-.enviar {
-  width: 40%;
-  padding: 15px 0;
-  background: orange;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  transition: 1s all;
-  cursor: pointer;
-}
-
-.enviar:hover {
-  background: darkorange;
-  transform: scale(1.2);
-}
-
-table {
-  margin: 20px 0 40px;
-}
-
-thead {
-  background: #555555;
-  color: white;
-  font-weight: bold;
-}
-
-main {
-  padding: 1rem 10px;
-  background: -o-linear-gradient(#fefefe, grey);
-}
-
-td,
-th {
-  border: 1px solid #000000;
-  padding: 8px 15px;
-}
-
-/* css da página inicial */
-.banner {
-  width: 100%;
-}
-
-.titulo-principal {
-  text-align: center;
-  font-size: 1.5em;
-  margin: 0 0 1em;
-  clear: left;
-}
-
-.principal {
-  padding: 3em 0;
-  background: #fefefe;
-  width: 940px;
-  margin: 0 auto;
-}
-
-.principal p {
-  margin: 0 0 1em;
-}
-
-.principal strong {
-  font-weight: bold;
-}
-
-.principal em {
-  font-style: italic;
-}
-
-.utensilios {
-  width: 120px;
-  float: left;
-  margin: 0 20px 20px 0;
-}
-
-.mapa {
-  padding: 3em 0;
-  background: linear-gradient(#fefefe, #888888);
-}
-
-.mapa-conteudo {
-  width: 940px;
-  margin: 0 auto;
-}
-
-.mapa p {
-  margin: 0 0 2em;
-  text-align: center;
-}
-
-.beneficios {
-  padding: 3em 0;
-  background: #888888;
-}
-
-.conteudo-beneficios {
-  width: 640px;
-  margin: 0 auto;
-}
-
-.lista-beneficios {
-  width: 40%;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.itens {
-  line-height: 1.5;
-}
-
-.itens:first-child {
-  font-weight: bold;
-}
-
-.itens:before {
-  content: '🟊';
-}
-
-.imagem-beneficios {
-  width: 60%;
-  opacity: 1;
-  transition: 400ms;
-  box-shadow: 10px 10px 10px 0 #000000;
-}
-
-.imagem-beneficios:hover {
-  opacity: 0.3;
-}
-
-.video {
-  width: 560px;
-  margin: 2em auto;
-}
-
-@media screen and (max-width: 480px) {
-  .caixa,
-  .principal,
-  .conteudo-beneficios,
-  .mapa-conteudo,
-  .video,
-  .produtos,
-  .produto-descricao,
-  .produto-preco,
-  .produtos li {
-    width: auto;
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  nav {
-    position: static;
-    width: auto;
-  }
-
-  .lista-beneficios,
-  .imagem-beneficios {
-    width: 100%;
-  }
-}
+    <footer>
+      <img src="logo-branco.png" />
+      <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</body>
+		</footer>
+</html>
